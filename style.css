@@ -9,7 +9,7 @@ padding:0;
 .footer {grid-column: span 12; display: grid;grid-template-columns: repeat(12, 1fr);grid-gap: 2% 2%; padding:1%;}
 .container{
 	width: 90%;
-	height: 100vh;
+	height: 90vh;
 	margin: 20px auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -37,15 +37,13 @@ padding:0;
 	.content {grid-column:span 8;}
 	.sidebar {grid-column: span 4;}
 }
-/* Mobilenheter upp till 786px i storlek*/
-@media screen and (max-width: 768px) {
-	
+/* Mobilenheter upp till 768px i storlek*/
+@media screen and (max-width: 767px) {
 	.container {grid-template-columns: 1fr; grid-template-rows: repeat(6, 25%) 100%; }
 	.header, .section1, .section2, .section3, .sidebar, .content, .footer, .footer1, .footer2, .footer3, .footer4 {grid-column: span 1;}
 	.footer{grid-template-columns: 1fr; grid-template-rows: 4;}
 }
-
-/* Tablets från 768px-959 i storlek. */
+/* Tablets från 769px-959 i storlek. */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.container {grid-template-rows: repeat(12, 1fr); grid-template-rows: repeat(4, 25%);}
 	.section1, .section2, .section3{ grid-column: span 4;}
